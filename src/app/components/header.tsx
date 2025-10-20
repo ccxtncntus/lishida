@@ -1,7 +1,10 @@
+import Link from 'next/link';
+import { GoArrowRight } from 'react-icons/go';
+
 /* eslint-disable @next/next/no-img-element */
 export const Header = () => {
     return (
-        <div className='px-2 sm:px-20 py-2 sticky top-0 shadow w-full bg-[white]'>
+        <div className='px-[100.23px] py-[11.14px] sticky top-0 shadow w-full bg-[white]'>
             <div className='flex justify-between items-center'>
                 {/* icon */}
                 <div className='flex flex-row gap-1'>
@@ -16,8 +19,17 @@ export const Header = () => {
                     </p>
                 </div>
                 {/* btn */}
-                <div>
-                    <button className=' hidden sm:inline-block  bg-blue-500 hover:cursor-pointer hover:bg-blue-700 transition-colors text-white  rounded px-10 py-2'>Khám phá ngay</button>
+                <div className='flex flex-row items-center gap-[22.27px]'>
+                    <div className='flex gap-[16.17px]'>
+                        <Link href={'#'}>Trang chủ</Link>
+                        <Link href={'#'}>Đặc trưng</Link>
+                        <Link href={'#'}>Cộng đồng</Link>
+                        <Link href={'#'}>Blog</Link>
+                        <Link href={'#'}>Thêm</Link>
+                    </div>
+                    <button className='bg-main hover:cursor-pointer transition-colors text-white  rounded-[2.78px] px-[22.27px] py-[9.74px]'>
+                        Khám phá ngay <GoArrowRight className='inline-block text-[24px]' />
+                    </button>
                 </div>
             </div>
         </div>
