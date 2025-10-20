@@ -9,6 +9,7 @@
 @theme {
     --color-main: #28cb8b;
     --color-silver: #f5f7fa;
+    --color-text: #89939e;
 }
 @theme inline {
     --color-background: var(--background);

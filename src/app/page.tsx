@@ -1,12 +1,10 @@
 'use client';
 // import Image from 'next/image';
-import Banner from './components/banner';
-import { Header } from './components/header';
+import Lishida from './components/lishida';
 export default function Home() {
     return (
         <div>
-            <Header />
-            <Banner />
+            <Lishida />
         </div>
     );
 }
