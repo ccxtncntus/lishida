@@ -82,7 +82,7 @@ export default function Lishida() {
                 <div className='flex justify-between h-[68.21px] items-center'>
                     <Image
                         alt='vip'
-                        src={'/l1.png'}
+                        src={'/banner.jpg'}
                         width={34}
                         height={34}
                     />
