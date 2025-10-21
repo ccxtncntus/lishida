@@ -80,18 +80,27 @@ export default function Lishida() {
                     <p className='text-[11.14px] text-[#89939E]'>Chúng tôi đồng hành cùng nhiều doanh nghiệp và nông trại trên toàn quốc</p>
                 </div>
                 <div className='flex justify-between h-[68.21px] items-center'>
-                    <Image
+                    {/* <Image
                         alt='vip'
                         src={'/banner.jpg'}
                         width={34}
                         height={34}
-                    />
+                        unoptimized
+                    /> */}
                     {L.map((item, index) => (
-                        <img
-                            className='w-[33.41px] h-[33.41px] rounded-[5.57px]'
+                        // <img
+                        //     className='w-[33.41px] h-[33.41px] rounded-[5.57px]'
+                        //     key={index}
+                        //     src={process.env.PUBLIC_URL + item || ''}
+                        //     alt={item}
+                        // />
+                        <Image
                             key={index}
-                            src={process.env.PUBLIC_URL + item || ''}
-                            alt={item}
+                            alt='vip'
+                            src={item}
+                            width={34}
+                            height={34}
+                            unoptimized
                         />
                     ))}
                 </div>
@@ -225,11 +234,19 @@ export default function Lishida() {
                     </div>
                     <div className='flex justify-between h-[68.21px] items-center align-middle w-full'>
                         {L.map((item, index) => (
-                            <img
-                                className='w-[33.41px] h-[33.41px] rounded-[5.57px]'
+                            // <img
+                            //     className='w-[33.41px] h-[33.41px] rounded-[5.57px]'
+                            //     key={index}
+                            //     src={item}
+                            //     alt={item}
+                            // />
+                            <Image
                                 key={index}
+                                alt='vip'
                                 src={item}
-                                alt={item}
+                                width={34}
+                                height={34}
+                                unoptimized
                             />
                         ))}
                         <Link
