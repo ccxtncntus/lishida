@@ -7,13 +7,14 @@ import { RiBarChartGroupedFill } from 'react-icons/ri';
 import { MdOutlineGroupWork } from 'react-icons/md';
 import { FaArrowRightLong, FaFacebook, FaTelegram, FaUserGroup } from 'react-icons/fa6';
 import { SiZalo } from 'react-icons/si';
+import Image from 'next/image';
 
 export default function Lishida() {
     const L = ['l1.png', 'l2.png', 'l3.png', 'l4.png', 'l5.png', 'l6.png', 'l7.png'];
     return (
         <>
             {/* header */}
-            <section className='px-[100.23px] py-[11.14px] sticky top-0 shadow w-full bg-[white] overflow-hidden'>
+            <section className='z-10 px-[100.23px] py-[11.14px] sticky top-0 shadow w-full bg-[white] overflow-hidden'>
                 <div className='flex justify-between items-center'>
                     {/* icon */}
                     <div className='flex flex-row gap-1'>
@@ -79,6 +80,12 @@ export default function Lishida() {
                     <p className='text-[11.14px] text-[#89939E]'>Chúng tôi đồng hành cùng nhiều doanh nghiệp và nông trại trên toàn quốc</p>
                 </div>
                 <div className='flex justify-between h-[68.21px] items-center'>
+                    <Image
+                        alt='vip'
+                        src={'/l1.png'}
+                        width={34}
+                        height={34}
+                    />
                     {L.map((item, index) => (
                         <img
                             className='w-[33.41px] h-[33.41px] rounded-[5.57px]'
